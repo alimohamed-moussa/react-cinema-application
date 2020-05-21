@@ -35,9 +35,9 @@ jobs:
           name: Installing AWS CLI
           working_directory: /
           command: |
-            sudo apt-get -y -qq awscli
+            sudo apt-get -y -qq update
             sudo apt-get install -y awscli
-            sudo apt-get install -y python-pipe python-dev python-build-essential
+            sudo apt-get install -y python-pip python-dev python-build-essential
       - run:
           name: Build Project
           command: |
