@@ -81,7 +81,7 @@ jobs:
             npm run build
             cd build
             zip ../build.zip -r *.[^.]*
-            echo "Build successful"
+            echo "Build is successful"
       - run:
           name: Deploy to AWS Cloudfront
           command: |
